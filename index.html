@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <form id="loginForm" action="index.html" method="post">
+            <h2>Login</h2>
+            <div class="container">
+                <label for="name">Name: <img src="https://cdn-icons-png.flaticon.com/128/9131/9131549.png" alt="user-icon"></label>
+                <input type="text" name="username"id=username required>
+
+                <label for="email">Email: </label>
+                <input type="text" name="email" id="email" required>
+
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password" maxlength="20" minlength="16" required>
+                <button type="submit">Login</button>
+            </div>
+        </form>
+        <form id="signinForm" method="post">
+            <h2>Sign In</h2>
+            <div class="form-group">
+                <label for="email">Email: <img src="https://cdn-icons-png.flaticon.com/128/9131/9131549.png" alt="user-icon"></label>
+                <input type="text" name="email" id="email" required>
+
+                <label for="password">Password: </label>
+                <input type="text" name="password" id="password" required>
+                <label for="password">Confirm:</label>
+                <input type="text" name="password" id="password" required>
+
+                <button type="submit">Sign In</button>
+            </div>
+        </form>
+        <p class="signup-link">Don't have an account? <a href="#">Sign Up</a></p>
+    </body>
+</html>
